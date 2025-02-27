@@ -40,10 +40,10 @@ class MediaAppCardPresenter : Presenter() {
         val card = ImageCardView(parent.context).apply {
             isFocusable = true
             isFocusableInTouchMode = true
-            findViewById<TextView>(R.id.title_text).apply {
+            findViewById<TextView>(androidx.leanback.R.id.title_text).apply {
                 ellipsize = TextUtils.TruncateAt.END
             }
-            findViewById<TextView>(R.id.content_text).apply {
+            findViewById<TextView>(androidx.leanback.R.id.content_text).apply {
                 ellipsize = TextUtils.TruncateAt.MIDDLE
             }
         }
